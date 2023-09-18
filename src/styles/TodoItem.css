@@ -1,0 +1,25 @@
+li {
+    border: 1px solid grey;
+    margin: 8px;
+    width: 400px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 4px;
+    .check {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-image: url('../assets/check_3472620.png');
+        background-size: cover;
+    }
+    .nope {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-image: url('../assets/cross_7698976.png');
+        background-size: cover;
+    }
+};
+
