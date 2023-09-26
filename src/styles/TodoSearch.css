@@ -9,5 +9,6 @@ div {
       border-radius: 12px;
       height: 32px;
       width: 250px;
+      padding-left: 8px;
    }
 }
