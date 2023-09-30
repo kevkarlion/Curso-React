@@ -11,30 +11,11 @@ li {
     align-items: center;
     justify-content: space-between;
     padding: 4px 4px;
-    .check {
-        display: inline-block;
-        width: 24px;
-        height: 24px;
-        background-image: url('../assets/checkedInactive.png');
-        background-size: cover;
-    }
-    .check-active{
-        display: inline-block;
-        width: 26px;
-        height: 26px;
-        background-image: url('../assets/checkedActive.png');
-        background-size: cover;
+    .text-item {
         text-decoration: line-through;
     }
-    .nope {
-        display: inline-block;
-        width: 18px;
-        height: 18px;
-        background-image: url('../assets/cruz.png');
-        background-size: cover;
-    }
-    .text-item{
-        text-decoration: line-through;
-    }
-};
+}
+
+
+
 

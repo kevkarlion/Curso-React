@@ -1,0 +1,34 @@
+.Icon{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+}
+
+
+.Icon-check{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    
+}
+
+.Icon-delete{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+
+
+
+.Icon-svg{
+    width: 36px;
+    height: 36px;
+}
+
+.Icon-check:hover .Icon-svg{
+    fill: green;
+}
+.Icon-delete:hover .Icon-svg{
+    fill: red;
+}

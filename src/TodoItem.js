@@ -1,8 +1,10 @@
 import './styles/TodoItem.css';
 import React from 'react';
+import { CompletedIcon } from './CompletedIcon';
+import { DeleteIcon } from './DeleteIcon';
+
 
 function TodoItem(props) {
-  // const [iconItem, setIconItem] = React.useState('');
 
   const changeCompleted = () => {
     const warning = props.text;
@@ -13,22 +15,20 @@ function TodoItem(props) {
     const alarmDelete = props.text;
     props.deleteItemTodo(alarmDelete); 
   }
-  
-
- 
+   
   return (
     <li>
-      <span
-        onClick={changeCompleted}
-        className={`check ${ props.completed && 'check-active'}`}>
-      </span>
+      <CompletedIcon 
+        changeCheck={changeCompleted}
+        completed={props.completed}
+      />
       <p 
         className={`${props.completed && 'text-item'}`}>
         {props.text}
       </p>
-      <span
-        onClick={deleteTodo} 
-        className='nope'></span>
+      <DeleteIcon
+        deleteCruz={deleteTodo}
+      / >
     </li>
   );
 };
