@@ -26,6 +26,7 @@
     height: 36px;
 }
 
+
 .Icon-check:hover .Icon-svg{
     fill: green;
 }

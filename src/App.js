@@ -9,31 +9,47 @@ import { CreateTodoButton } from './CreateTodoButton';
 import React from 'react';
 
 
-const defaultTodos = [
-  {
-    text: 'Cortar cebolla',
-    completed: true
-  },
-  {
-    text: 'Juntar las esferas del dragon',
-    completed: false
-  },
-  {
-    text: 'Ir a entrenar',
-    completed: false
-  },
-  {
-    text: 'Saltar la cuerda',
-    completed: false
-  },
-  {
-    text: 'Estados derivados',
-    completed: true
-  }
-];
+// const defaultTodos = [
+//   {
+//     text: 'Cortar cebolla',
+//     completed: true
+//   },
+//   {
+//     text: 'Juntar las esferas del dragon',
+//     completed: false
+//   },
+//   {
+//     text: 'Ir a entrenar',
+//     completed: false
+//   },
+//   {
+//     text: 'Saltar la cuerda',
+//     completed: false
+//   },
+//   {
+//     text: 'Estados derivados',
+//     completed: true
+//   }
+// ];
+
+// localStorage.setItem('TODOS_V1', JSON.stringify(defaultTodos));
 
 
 function App() {
+  //Guardo el localStorage que esta en string, en una variable
+  const localStorageTodos = localStorage.getItem('TODOS_V1');
+
+  let parsedTodos;
+
+  if (!localStorageTodos) {
+    //En caso que sea la primera vez que un user entra a la app
+    localStorage.setItem('TODOS_V1', JSON.stringify([]));
+    parsedTodos = [];
+  } else {
+    //si tiene datos, lo parseo a un array
+    parsedTodos = JSON.parse(localStorageTodos);
+  }
+
 
   //uso de estados, desde componente padre a hijo
   const [searchValue, setSearchValue] = React.useState('');
@@ -41,7 +57,7 @@ function App() {
 
 
 
-  const [todos, setTodos] = React.useState(defaultTodos);
+  const [todos, setTodos] = React.useState(parsedTodos);
 
   //Estado derivado
   //La doble negacion devuelve un valor booleano,
@@ -71,6 +87,15 @@ function App() {
   });
 
 
+  //Funcion actualizadora de datos del localStorage 
+  //y del estado de todos
+  const saveTodos = (newTodos) => {
+    localStorage.setItem('TODOS_V1', JSON.stringify(newTodos));
+    setTodos(newTodos);
+  };
+
+
+
   /**
    * Funcion que busca un todo clickeado 
    * en el c hijo, y luego lo cambia
@@ -79,18 +104,18 @@ function App() {
   const actualizarCompletado = (dato) => {
     const newArray = [...todos];
 
-    //debo pasar data.text, el subobjeto, no solo data.
+    //debo pasar data.text, el sub-objeto, no solo data.
     const indexCompleted = newArray.findIndex((data) => data.text === dato);
     const stateCompleted = newArray[indexCompleted].completed;
-    newArray[indexCompleted].completed = !stateCompleted; 
-    setTodos(newArray);
-  } 
+    newArray[indexCompleted].completed = !stateCompleted;
+    saveTodos(newArray);
+  }
 
   const deletedTodo = (dato) => {
     const newArray = [...todos];
     const todoIndex = newArray.findIndex((data) => data.text === dato);
     newArray.splice(todoIndex, 1);
-    setTodos(newArray);
+    saveTodos(newArray);
   }
 
 

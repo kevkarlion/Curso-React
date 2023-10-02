@@ -9,8 +9,6 @@ function CompletedIcon(props){
             <TodoIcon
                 type='check'
                 color={ props.completed ? 'green' : 'grey'}
-                
-                
             /> 
         </span>
             
