@@ -1,0 +1,22 @@
+/* eslint-disable no-unused-vars */
+import { TodoProvider } from '../TodoContext';
+import logo from '../platzi.webp';
+import './App.css';
+import { AppUI } from './AppUI';
+import React from 'react';
+
+
+
+function App() {
+
+  return (
+    <TodoProvider>
+      <AppUI/>
+    </TodoProvider>
+  )
+}
+
+
+
+
+export default App;

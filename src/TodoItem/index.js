@@ -1,7 +1,7 @@
-import './styles/TodoItem.css';
+import './TodoItem.css';
 import React from 'react';
-import { CompletedIcon } from './CompletedIcon';
-import { DeleteIcon } from './DeleteIcon';
+import { CompletedIcon } from '../CompletedIcon';
+import { DeleteIcon } from '../DeleteIcon';
 
 
 function TodoItem(props) {

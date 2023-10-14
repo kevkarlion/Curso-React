@@ -1,5 +1,5 @@
 import React from "react";
-import { TodoIcon } from './TodoIcon';
+import { TodoIcon } from '../TodoIcon';
 
 
 
@@ -8,7 +8,7 @@ function CompletedIcon(props){
         <span onClick={props.changeCheck}>
             <TodoIcon
                 type='check'
-                color={ props.completed ? 'green' : 'grey'}
+                color={ props.completed ? '#2BE157' : '#3D3938'}
             /> 
         </span>
             

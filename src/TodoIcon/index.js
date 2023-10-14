@@ -6,7 +6,7 @@
 // import { ReactComponent as DeleteSvg } from './delete.svg';
 import { PiCheckBold } from "react-icons/pi";
 import { IoClose } from "react-icons/io5";
-import './styles/TodoIcon.css'
+import './TodoIcon.css'
 
 const iconTypes = {
     /*
