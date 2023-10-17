@@ -1,0 +1,25 @@
+.Form-Modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(50, 50, 50, 0.5);
+}
+
+.Form-Modal--label {
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.Form-Modal--buttons {
+    display: flex;
+    width: 20%;
+    height: auto;
+    margin-top: 20px;
+    justify-content: space-around;
+    .TodoForm-button {
+        box-sizing: border-box;
+        width: 75px;
+        height: 30px;
+    }
+}

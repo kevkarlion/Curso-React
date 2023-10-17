@@ -9,6 +9,7 @@ function TodoSearch(){
         setSearchValue,
         searchValue,
     } = React.useContext(TodoContext);
+    
     return (
       <div className='input-container'>
           <input className='search' placeholder="Buscar TODO" 

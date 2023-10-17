@@ -4,9 +4,9 @@ import { useLocalStorage } from "../useLocalStorage";
 /*
 Context para usar props sin 
 molestar a toda la famila.
+Creamos un contexto
 */
 const TodoContext = React.createContext();
-
 
 
 //Creamos nuestro context personalizado
@@ -14,11 +14,13 @@ function TodoProvider({ children }){
     //uso de estados, desde componente padre a hijo
     const [searchValue, setSearchValue] = React.useState('');
 
+    const [openModal, setOpenModal] = React.useState(false);
+
     //uso de custom hook
     const { item: todos,
-          saveItem:saveTodos,
-          loading,
-          error } = useLocalStorage('TODOS_V1', []);
+            saveItem:saveTodos,
+            loading,
+            error } = useLocalStorage('TODOS_V1', []);
 
 
     //Estado derivado
@@ -61,8 +63,6 @@ function TodoProvider({ children }){
         saveTodos(newArray);
     }
 
-
-
     return(
         <TodoContext.Provider value={{
             loading,
@@ -73,7 +73,9 @@ function TodoProvider({ children }){
             setSearchValue,
             searchedValues,
             deletedTodo,
-            actualizarCompletado
+            actualizarCompletado,
+            openModal,
+            setOpenModal,
         }}> 
             {children}
         </TodoContext.Provider>
