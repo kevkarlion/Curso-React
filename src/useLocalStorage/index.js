@@ -50,7 +50,7 @@ function useLocalStorage(itemName, initialValue) {
           loading, 
           error };
 
-}
+};
 
 export { useLocalStorage };
 

@@ -41,6 +41,7 @@ function TodoProvider({ children }){
         return todoText.includes(searchText);
     });
 
+
     /**
     * Funcion que busca un todo clickeado 
     * en el c hijo, y luego lo cambia
@@ -61,10 +62,21 @@ function TodoProvider({ children }){
         const todoIndex = newArray.findIndex((data) => data.text === dato);
         newArray.splice(todoIndex, 1);
         saveTodos(newArray);
-    }
+    };
+
+    const addTodo = (valueTodo) => {
+        const newArray = [...todos];
+        newArray.push = {
+            text: valueTodo,
+            completed: false,
+        };
+        saveTodos(newArray);
+    };
 
     return(
         <TodoContext.Provider value={{
+            todos,
+            saveTodos,
             loading,
             error,
             completedTodos,
@@ -76,6 +88,7 @@ function TodoProvider({ children }){
             actualizarCompletado,
             openModal,
             setOpenModal,
+            addTodo,
         }}> 
             {children}
         </TodoContext.Provider>
