@@ -35,12 +35,23 @@ function TodoProvider({ children }){
     const totalTodos = todos.length;
 
 
+    //Si no tengo elementos, esto me genera un error!!
     const searchedValues = todos.filter((todo) => {
         const todoText = todo.text.toLocaleLowerCase();
         const searchText = searchValue.toLocaleLowerCase();
         return todoText.includes(searchText);
     });
 
+
+    // const searchedValues = todos.filter((todo) => {
+    //     if (todo.text) {
+    //         const todoText = todo.text.toLocaleLowerCase();
+    //         const searchText = searchValue.toLocaleLowerCase();
+    //         return todoText.includes(searchText);
+    //     }
+    //     console.log(todo);
+    //     return false; // Otra opción si todo.text no está definido
+    // });
 
     /**
     * Funcion que busca un todo clickeado 
@@ -66,10 +77,10 @@ function TodoProvider({ children }){
 
     const addTodo = (valueTodo) => {
         const newArray = [...todos];
-        newArray.push = {
+        newArray.push({
             text: valueTodo,
             completed: false,
-        };
+        });
         saveTodos(newArray);
     };
 

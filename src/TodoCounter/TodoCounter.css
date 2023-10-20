@@ -3,16 +3,16 @@
     width: 300px;
     height: 60px;
     margin: 42px 42px;
-    background-color: white;
+    
+    color: #5B5B5B;
     border: 2px solid #3D3938;
     border-radius: 12px;
     padding: 12px;
 }
-.container-title:hover {
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-}
+
 
 .container-title--text {
+    color: white;
     text-align: center;
     font-size: 18px;  
     padding-top: 5px;
