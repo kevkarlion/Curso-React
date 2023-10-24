@@ -7,24 +7,21 @@ div {
    text-align: center; 
    margin-bottom: 15px;
    .search {
-      color: grey;
-      font-size: 15;
-      font-weight: 100;
+      color: #505050 ;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: bold;
       background-color: whitesmoke;
       font-size: 15px;
-      font-weight: 300;
       outline: none;
       border: none;
-      box-shadow: 0 0 5px rgba(26, 224, 215, 0.8);
-      font-weight: bold;
-      border-radius: 12px;
+      border-radius: 8px;
       height: 32px;
       width: 250px;
       padding-left: 8px;
    }
    .search:focus {
       /* Estilo adicional cuando el input está enfocado */
-      box-shadow: 0 0 10px rgba(26, 224, 215, 0.8); /* Aumentamos el resplandor cuando el input está enfocado */
+      box-shadow: 0 0 10px rgba(247, 247, 247, 0.8); /* Aumentamos el resplandor cuando el input está enfocado */
     }
     .search::placeholder {
       color: grey;
