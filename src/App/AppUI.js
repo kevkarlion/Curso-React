@@ -34,24 +34,24 @@ function AppUI() {
 
             {totalTodos > 0 && <TodoCounter />}
 
-            {!loading && !error && <TodoSearch />}
+            {!loading && !error && totalTodos > 0 && <TodoSearch />}
 
 
             <TodoList>
                 {loading && <TodosLoading />}
                 {error && <TodosError />}
-                {(!loading && !error && searchedValues.length === 0)
+                {(!loading && !error && totalTodos === 0)
                     && <EmptyTodos />}
 
                 {/* Creo un nuevo array, y le imprimo propiedades
-             a traves de props a un componente que hace de 
-             schema. Esto permite que sea reutulizable el 
-             componente TodoItem  */}
+                a traves de props a un componente que hace de 
+                schema. Esto permite que sea reutulizable el 
+                componente TodoItem  */}
                 {/* Renderizo solo las 
-             coincidencias del buscador */}
+                coincidencias del buscador */}
                 {/* IMPORTANTE! esto, renderiza todo los TODOS, 
-             cuando aun no hay una busqueda, ya que todos los 
-             TODOS tienen el mismo cursor */}
+                cuando aun no hay una busqueda, ya que todos los 
+                TODOS tienen el mismo cursor */}
                 {searchedValues.map(item => (
                     <TodoItem
                         key={item.text}

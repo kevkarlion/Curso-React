@@ -12,7 +12,7 @@ function TodoSearch(){
     
     return (
       <div className='input-container'>
-          <input className='search' placeholder="Buscar TODO" 
+          <input className='search' placeholder="Buscar ToDo" 
           value={searchValue}
 
           /**Un evento onChange, 
