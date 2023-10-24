@@ -21,4 +21,5 @@ ul {
 li, p {
     display: flex;
     align-items: center;
+    color: #1F1F1F;
 }
