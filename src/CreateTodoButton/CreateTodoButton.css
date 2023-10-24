@@ -2,17 +2,23 @@ button{
     text-align: center;
 }
 
+.create-todo-button {
+    width: 38px;
+    height: 55px;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    border: 2px solid #3D3938;
+    border-radius: 5px;
+    background-color: #FFE96B;
+}
+
+.create-todo-button:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+}   
+
 .CreateTodoButtonZ {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    position: relative;
     z-index: 1;
 }
 
-.CreateTodoButton {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    position: relative;
-}
