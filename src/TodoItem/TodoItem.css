@@ -2,6 +2,8 @@ span {
     cursor: pointer;
 }
 
+
+
 li {
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
@@ -19,7 +21,6 @@ li {
         text-decoration: line-through;
     }
 }
-
 
 
 

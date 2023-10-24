@@ -4,7 +4,8 @@ import { CompletedIcon } from '../CompletedIcon';
 import { DeleteIcon } from '../DeleteIcon';
 
 
-function TodoItem(props) {
+
+function TodoItem(props, children) {
 
   const changeCompleted = () => {
     const warning = props.text;
@@ -15,6 +16,7 @@ function TodoItem(props) {
     const alarmDelete = props.text;
     props.deleteItemTodo(alarmDelete); 
   }
+
    
   return (
     <li>
