@@ -66,10 +66,10 @@ body {
 	
 	font-family: 'Ubuntu', sans-serif;
 
-	background: #FC354C;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #FC354C, #0ABFBC);  /* Chrome 10-25, Safari 5.1-6 */
+	background: #FC354C; 
+	background: -webkit-linear-gradient(to right, #FC354C, #0ABFBC); 
 	
-	background: linear-gradient(to right, #FC354C, #0ABFBC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(to right, #FC354C, #0ABFBC);
 	
 }
 

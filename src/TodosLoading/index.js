@@ -1,10 +1,18 @@
 import React from 'react';
+import './TodosLoading.css';
+
+
 
 
 function TodosLoading(){
-    return (
-      <p>Cargando...</p>  
-    )
+  
+
+
+  return (
+    <div className='container-loading'>
+      <p> Cargando ... </p> 
+    </div> 
+  )
 };
 
 export { TodosLoading };
