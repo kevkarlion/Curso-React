@@ -1,0 +1,12 @@
+.tu-primer-todo {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 32px;
+    border: 4px solid #3D3938;
+    border-radius: 7px;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #FFE96B;
+    width: 250px;
+    height: 170px;
+}
