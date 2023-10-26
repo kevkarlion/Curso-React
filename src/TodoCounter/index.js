@@ -14,11 +14,14 @@ function TodoCounter(){
     } = React.useContext(TodoContext);
 
     return (
-        <div className='container-title'>
-            <h1 className='container-title--text'>
-                Completaste {completedTodos} de {totalTodos} TODOS
-            </h1>
+        <div className='container-main'>
+            <div className='container-title'>
+                <h1 className='container-title--text'>
+                    Completaste {completedTodos} de {totalTodos} TODOS
+                </h1>
+            </div>
         </div>
+        
                    
     )
 };
