@@ -1,14 +1,16 @@
-.Icon {
-    display: inline-block;
-    width: 36px;
-    height: 36px;
+span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
 }
 
 .Icon-check{
     display: inline-block;
     width: 32px;
     height: 32px;
-    
 }
 
 .Icon-delete{
@@ -18,8 +20,8 @@
 }
 
 .Icon-svg{
-    width: 36px;
-    height: 36px;
+    width: 28px;
+    height: 28px;
 }
 
 .Icon-check:hover .Icon-svg{
