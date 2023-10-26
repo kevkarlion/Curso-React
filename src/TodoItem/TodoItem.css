@@ -31,5 +31,20 @@ li {
 }
 
 
+@media screen and (min-width: 768px) and (max-width: 1024px)  {
+    li {
+        width: 250px;
+    }
+}
 
+@media screen and (min-width: 425px) and (max-width: 768px) {
+    li {
+        width: 280px;
+    }
+}
 
+@media  screen and (min-width: 1024px) {
+    li {
+        width: 280px;
+    }
+}
