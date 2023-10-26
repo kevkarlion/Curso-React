@@ -25,7 +25,7 @@ function TodoItem(props, children) {
         completed={props.completed}
       />
       <p 
-        className={`${props.completed && 'text-item'}`}>
+        className={`container-text ${(props.completed && 'text-item')}`}>
         {props.text}
       </p>
       <DeleteIcon
