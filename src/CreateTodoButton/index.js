@@ -10,7 +10,7 @@ function CreateTodoButton() {
         setOpenModal,
     } = React.useContext(TodoContext);
     return (
-        <button className={openModal ? "CreateTodoButtonZ create-todo-button" : "create-todo-button"} 
+        <button className={`create-todo-button ${openModal && "CreateTodoButtonZ"}`} 
             onClick={() => (setOpenModal(!openModal))
         }><GrAdd /></button>
     );

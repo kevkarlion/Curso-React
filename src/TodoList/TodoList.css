@@ -14,31 +14,4 @@ ul {
     border-radius: 12px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px)  {
-    ul {
-        width: 627px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin: 32px 0px ;
-        padding: 15px;
-        border-radius: 12px;
-    }
-}
 
-@media  screen and (min-width: 1024px) {
-    ul {
-        width: 918px;
-        display: flex;
-        flex-direction: row;
-
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin: 32px 0px ;
-        padding: 15px;
-        border-radius: 12px;
-    }
-}
