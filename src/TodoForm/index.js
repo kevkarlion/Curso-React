@@ -38,7 +38,7 @@ function TodoForm (){
                             type="submit"
                             className="TodoForm-button acept" 
                             >
-                                Aceptar
+                                Add
                         </button>
                         <button 
                             type="button"
@@ -46,7 +46,7 @@ function TodoForm (){
                             onClick={() => {
                                 setOpenModal(false);
                             }}>
-                                Cancelar
+                                Cancel
                         </button>
                     </div> 
             </form>

@@ -46,7 +46,7 @@
     display: flex;
     height: auto;
     width: 250px;
-    margin-top: 20px;
+    margin-bottom: 20px;
     justify-content: space-around;
     .TodoForm-button {
         font-family: 'Ubuntu', sans-serif;
@@ -56,9 +56,13 @@
         box-sizing: border-box;
         width: 75px;
         height: 30px;
-        
-    }
+    } 
+    
+}
+
+.acept {
+    background-color: #7979F5;
 }
 .TodoForm-button:hover{
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .5);
 }
