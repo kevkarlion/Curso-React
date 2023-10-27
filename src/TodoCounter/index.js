@@ -15,10 +15,12 @@ function TodoCounter(){
 
     return (
         <div className='container-main'>
+            <h1 className='title'>ToDo List</h1>
             <div className='container-title'>
-                <h1 className='container-title--text'>
+                
+                <h2 className='container-title--text'>
                     Completaste {completedTodos} de {totalTodos} TODOS
-                </h1>
+                </h2>
             </div>
         </div>
         

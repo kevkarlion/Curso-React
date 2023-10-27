@@ -1,17 +1,25 @@
+
 .container-main {
     display: flex;
+    flex-direction: column;
     justify-content: center;    
+    align-items: center;
+    height: auto;
+}
+.title {
+    width: 150px;
+    height: auto;
+    text-align: center;
+    font-size: 32px; 
+    font-weight: 600;
+    margin-top: 15px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid white;
 }
 
+
 .container-title {
-    
-    width: 300px;
-    height: 60px;
-    margin: 42px 42px;
-    background-color: #FFE96B;
-    color: #5B5B5B;
-    border: 2px solid #3D3938;
-    border-radius: 12px;
+    margin: 24px 42px;
     padding: 12px;
 }
 
