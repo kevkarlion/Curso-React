@@ -5,14 +5,14 @@ li {
     border: 2px solid #3D3938;
     background-color: #FFE96B;
     margin: 8px;
-
-    width: 400px;
-    height: 55px;
+    width: 850px;
+    min-height: 60px;
+    height: auto;
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 14px;
+    padding: 0px 14px;
     .text-item {
         text-decoration: line-through;
         
@@ -20,19 +20,20 @@ li {
 }
 
 .container-text {
-    display: inline-block;
-    height: 40px;
-    padding-top: 12px;
-    width: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    margin: 4px 4px;
+    padding: 4px 4px;
     margin-left: 6px;
     margin-right: 6px;
 }
 
-@media screen and (min-width: 425px) and (max-width: 768px) {
+@media screen and (min-width: 375px) and (max-width: 1023px) {
     li{
-        width: 400px;
+        width: 100%;
     }
 }

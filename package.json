@@ -13,7 +13,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -32,5 +34,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "."
+  "homepage": "https://kevkarlion.github.io/Todo-List-React",
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
+  }
 }
